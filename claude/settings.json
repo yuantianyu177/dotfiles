@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hook_scripts/auto_approve_tools.sh",
+            "statusMessage": "检查工具是否自动批准..."
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hook_scripts/auto_approve_shell.sh",
+            "statusMessage": "检查命令安全性..."
+          }
+        ]
+      }
+    ]
+  },
+  "language": "Chinese",
+  "effortLevel": "low",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true
+  }
+}

@@ -1,0 +1,4 @@
+# This is a file path interface of template file
+
+SKILL: ~/.claude/template/SKILL.md
+HOOK: ~/.claude/template/HOOK.md

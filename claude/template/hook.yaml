@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "<EventName>": [
+      {
+        "matcher": "<regex or omit>",
+        "hooks": [
+          {
+            "type": "command|prompt|agent",
+            "command": "<for command>",
+            "prompt": "<for prompt/agent>",
+          }
+        ]
+      }
+    ]
+  }
+}
+
