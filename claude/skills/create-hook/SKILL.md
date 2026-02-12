@@ -163,3 +163,8 @@ Here are examples of each pattern in action:
 
 ## Tips
 - Run step by step
+- Use AskUserQuestion tool whenever you need to ask the user to make a choice. Key rules:
+    - Set `multiSelect: true` if needed 
+    - `header`: short label
+    - `options`: each has `label` and `description`
+

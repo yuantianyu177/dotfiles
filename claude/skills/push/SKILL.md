@@ -23,8 +23,12 @@ When pushing changes, follow these steps:
 
 5. **Verify**: Run `git status` and `git log --oneline -3` to confirm push success
 
-IMPORTANT:
+## Tips:
 - NEVER force push (`--force` or `-f`) unless the user explicitly asks
 - NEVER push to main/master without user confirmation
 - If pushing to main/master, always warn the user first
 - If pre-push hook fails, show the error and ask the user how to proceed
+- Use AskUserQuestion tool whenever you need to ask the user to make a choice. Key rules:
+    - Set `multiSelect: true` if needed 
+    - `header`: short label
+    - `options`: each has `label` and `description`

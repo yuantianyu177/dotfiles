@@ -19,8 +19,13 @@ When committing changes, follow these steps:
    ```
 5. **Verify**: Run `git status` after commit to confirm success.
 
-IMPORTANT:
+## Tips
 - Never amend previous commits unless explicitly asked
 - Never push unless explicitly asked
 - Never use --no-verify
 - If pre-commit hook fails, fix the issue and create a NEW commit
+- Use AskUserQuestion tool whenever you need to ask the user to make a choice. Key rules:
+    - Set `multiSelect: true` if needed 
+    - `header`: short label
+    - `options`: each has `label` and `description`
+
