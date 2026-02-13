@@ -1,6 +1,8 @@
 # Dotfiles
 
-个人配置文件管理，通过符号链接部署到系统。
+[English](README_EN.md)
+
+个人配置文件。
 
 ## 使用
 
@@ -25,35 +27,4 @@ dotfiles/
 ├── oh-my-zsh/    # Oh-My-Zsh 配置
 ├── opencode/     # Opencode 配置
 └── install.sh    # 安装脚本
-```
-
----
-
-# Dotfiles (English)
-
-Personal dotfiles managed with symbolic links.
-
-## Usage
-
-```bash
-git clone https://github.com/yuantianyu177/dotfiles.git
-cd dotfiles
-./install.sh
-```
-
-## Add New Config
-
-1. Add `xxx_items()` function in `install.sh`
-2. Add to `SOFTWARES` and `FUNCTIONS` arrays
-3. Create config directory
-
-## Structure
-
-```
-dotfiles/
-├── claude/       # Claude Code config
-├── nvim/         # Neovim config
-├── oh-my-zsh/    # Oh-My-Zsh config
-├── opencode/     # Opencode config
-└── install.sh    # Install script
 ```
