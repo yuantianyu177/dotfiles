@@ -8,6 +8,7 @@ DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 claude_items() {
   cat <<'LIST'
+claude/CLAUDE.md|~/.claude/CLAUDE.md
 claude/settings.json|~/.claude/settings.json
 claude/hook_scripts|~/.claude/hook_scripts
 claude/skills|~/.claude/skills
@@ -47,7 +48,7 @@ link_item() {
   if [ -L "$dst" ]; then
     rm "$dst"
   elif [ -e "$dst" ]; then
-    local backup="$dst.bak.$(date +%Y%m%d%H%M%S)"
+    local backup="$(dirname "$dst")/.$(basename "$dst").bak.$(date +%Y%m%d%H%M%S)"
     mv "$dst" "$backup"
     echo "  [backup] $dst -> $backup"
   fi
