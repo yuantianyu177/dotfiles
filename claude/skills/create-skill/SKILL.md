@@ -4,7 +4,7 @@ description: Create skill automatically. Use when the user says "generate skill"
 ---
 
 ## Steps
-1. **Read the template format**: The file path of template is queried in ~/.claude/interface/interface.yaml, then read the format
+1. **Read the template format**: The path of template is queried in ~/.claude/interface/interface.yaml, then read the format
 2. **Confirm the name**: Provide suggestions and ask the user for acceptance. The user can specify the name.
 3. **Output skill content in format**: Output skill according context, use English. Must add the second tip(Use AskUserQuestion tool) to the skill content
 4. **Ask user if accept** Three options: 
