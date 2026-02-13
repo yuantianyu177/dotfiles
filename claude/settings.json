@@ -28,9 +28,10 @@
       }
     ]
   },
-  "language": "Chinese",
-  "effortLevel": "low",
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true
-  }
+  },
+  "language": "Chinese",
+  "autoMemoryEnabled": false,
+  "effortLevel": "low"
 }
