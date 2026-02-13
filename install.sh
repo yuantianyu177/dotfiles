@@ -29,9 +29,17 @@ oh-my-zsh/aliases.zsh|~/.oh-my-zsh/custom/aliases.zsh
 LIST
 }
 
+opencode_items() {
+  cat <<'LIST'
+opencode/opencode.json|~/.config/opencode/opencode.json
+opencode/AGENTS.md|~/.config/opencode/AGENTS.md
+claude/skills|~/.config/opencode/skills
+LIST
+}
+
 # ============ Registry ============
-SOFTWARES=("claude" "nvim" "oh-my-zsh")
-FUNCTIONS=("claude_items" "nvim_items" "ohmyzsh_items")
+SOFTWARES=("claude" "nvim" "oh-my-zsh" "opencode")
+FUNCTIONS=("claude_items" "nvim_items" "ohmyzsh_items" "opencode_items")
 
 # ============ Link helper ============
 link_item() {
